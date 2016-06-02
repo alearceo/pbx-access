@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+ROOTDIR=/opt/pbx-access
+LOGDIR=/opt/pbx-access/log
+
+cat $LOGDIR/pbx-original-output.txt | grep '^[0-9][0-9]' > $LOGDIR/pbx-clean-output.txt

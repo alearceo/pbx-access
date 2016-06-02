@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+ROOTDIR=/opt/pbx-access
+LOGDIR=/opt/pbx-access/log
+
+$ROOTDIR/pbx-access >> $LOGDIR/pbx-original-output.txt

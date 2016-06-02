@@ -1,0 +1,8 @@
+#!/usr/bin/expect
+set timeout -1
+spawn telnet "192.168.10.25" "2300"
+expect -gl "-"
+send "SMDR\r"
+expect "Enter Password:"
+send "PCCSMDR\r"
+expect timeout
